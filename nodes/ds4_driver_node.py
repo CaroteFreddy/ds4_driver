@@ -26,7 +26,8 @@ def main():
     rospy.init_node("ds4_driver_node")
 
     device_addr = rospy.get_param("~device_addr", None)
-    backend_type = rospy.get_param("~backend", "hidraw")
+    #backend_type = rospy.get_param("~backend", "hidraw")
+    backend_type = rospy.get_param("~backend", "bluetooth")
 
     controller = ControllerRos()
 
